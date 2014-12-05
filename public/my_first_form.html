@@ -2,6 +2,8 @@
 <head>
 <form method="POST" action="/process-form.php">
     <p>
+       <h1> User Login </h1>
+
         <label for="username">Username</label>
         <input id="username" name="username" type="text" placeholder= "Enter your name">
     </p>
@@ -12,6 +14,65 @@
     <p>
 <button type="submit">Log On</button>
     </p>
+
+    <h1> Compose an Email </h1>
+
+        <p>
+            <textarea id="to" name"to"> To</textarea>
+                                                    </P>
+        <p>
+            <textarea id="from" name"from"> From</textarea>
+                                                    </p>
+        <p>
+        <textarea id="Subject" name"Subject"> Subject</textarea>
+                                                    </p>
+         <p>                                           
+        <textarea id="Body" name"Body"> Body</textarea>
+                                                    </p>
+        <lable for ="copy_to_sent">
+            <input type="checkbox" id="copy_to_sent" name ="copy_to_sent" value"yes" checked>
+            <label for="mailing_list">Send a copy of email to my sent folder</label>
+
+
+        <p>
+            <button type="send">Send</button>
+                                        </p>
+
+    <h1> Multiple Choice Test </h1>
+
+    <p>Where is Apple's headquarters?</p>
+    <label>
+        <input type='radio' id="q1a" name='q1' value="San francisco"> San Francisco
+    </label>
+    <label>
+        <input type='radio' id="q2a" name='q2' value="Seattle"> Seattle
+    </label>
+    <label>
+        <input type='radio' id="q3a" name='q3' value="Cupertino"> Cupertino
+    </label>
+    <p> Where in the world is Carmen Sandiego?</p>
+    <label>
+        <input type='radio' id="q1b" name='q1' value="Brazil"> Brazil
+    </label>
+    <label>
+
+    <label>
+        <input type='radio' id="q2b" name='q1' value="France"> France
+    </label>
+    <label>
+        <input type='radio' id="q3b" name='q1' value="San francisco"> San Francisco
+    </label>
+    <label>
+        <input type='radio' id="q4b" name='q4b' value="No one knows"> No one knows
+    </label>
+    <p> What states have you been to? </p>
+        <label><input type="checkbox" id="state1" name="state[]" value="New Mexico"> New Mexico</label>
+        <label><input type="checkbox" id="state2" name="state[]" value="New York"> New York</label>
+        <label><input type="checkbox" id="state3" name="state[]" value="Flordia"> Flordia</label>
+
+
+
+
 </form>
 </head>
 <body>
