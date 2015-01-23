@@ -8,6 +8,9 @@
         .invisable {
             display: none;
         }
+        .bold{
+            font-weight: bold
+        }
     </style>
     <script src="/js/jquery.min.js"></script>
     
@@ -15,12 +18,22 @@
     <!-- preventDefalt prevents the anchor tag from sending to a link-->
     <!-- all the dd tags turn off or on the invisable class-->
     <script>
-        $('document').ready(function() {
-            $('#invisable').click(function(event) {
+          $('document').ready(function() {
+            $('#invisable').click(function() {
                 event.preventDefault();
-                $("dd").toggleClass('invisable');
+                $("dd").slideToggle('invisable');
             });
+
+            $('ul').each(function() {
+                $(this).children().first().css('font-weight', 'bold');
+            });
+
+            $('dd').click(function() {
+                $('#national-parks').fadeToggle();
+            });
+
         });
+
     </script>
 </head>
 <body>
@@ -28,38 +41,46 @@
         <h1>Parks List</h1>
     </div>
     <div class="">
-        <dl>
-            <dt>What government agency oversees the National Park Service?
-                </dt>
-            <dd class = "invisable">The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the Department's Assistant Secretary for Fish and Wildlife and Parks.</dd>
-            <dt>How do I obtain a park pass?
-                </dt>
-            <dd class = "invisable">Visitors can obtain park passes by visiting their nearest park site. Most sites have passes available, however it is recommended to call a park prior to your visit. Learn more about the America the Beautiful - National Parks and Federal Recreation Lands Pass.</dd>
-            <dt>What do I need to know about driving off road in national parks?    </dt>
-            <dd class = "invisable">Before you head out, check with the national parks that you intend to visit. In many national parks, off-road driving is illegal. Where off-road driving is allowed, the National Park Service regulates it.
-            </dd>
-            <dt>How many people visit the national parks?
-            </dt>
-            <dd class = "invisable">Total recreation visitors to the national parks in 2013: 273,630,895
-            </dd>
-            <dt>How do I obtain a park pass?
-                </dt>
-            <dd class = "invisable">Visitors can obtain park passes by visiting their nearest park site. Most sites have passes available, however it is recommended to call a park prior to your visit. Learn more about the America the Beautiful - National Parks and Federal Recreation Lands Pass.</dd>
-            <dt>How do I obtain a park pass?
-                </dt>
-            <dd class = "invisable">Visitors can obtain park passes by visiting their nearest park site. Most sites have passes available, however it is recommended to call a park prior to your visit. Learn more about the America the Beautiful - National Parks and Federal Recreation Lands Pass.</dd>
-            <dt>How do I make reservations for camping/lodging in national parks?
-                </dt>
-            <dd class = "invisable">Not all parks participate in this service, many campgrounds are first come, first served. For more information on specific camping and lodging services offered at the park(s) of your interest, please check their homepage by using our search feature.</dd>
-            <dt>What is the origin of the National Park Service arrowhead?
-                </dt>
-            <dd class = "invisable">The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The Sequoia tree and bison represent vegetation and wildlife, the mountains and water represent scenic and recreational values, and the arrowhead represents historical and archeological values. It was registered Feb. 9, 1965, by the U.S. Patent Office as the official emblem of the NPS. Further information on the Arrowhead, including definitions, uses, powers to revoke uses, and penalties for wrongful use can be found in Title 36 Code of Federal Regulations 11.1-4.
-                </dd>
-            <dt>What role did the National Park Service have in the Deepwater Horizon oil spill response?
-                </dt>
-            <dd class = "invisable">The National Park Service was an integral part of the national federal response to the explosion of the Deepwater Horizon drilling rig which occurred in the Gulf of Mexico on April 20, 2010.</dd>
+        <h3>Mustang Island</h3>
+    <ul id="national-parks">
+        <li>You can play at the beach (swim, surf, build a sand castle), camp, picnic, fish, hike, mountain bike, kayak, and bird watch.</li>
+        <li>We have water, cold-water rinse showers and portable toilets along two miles of the beach.</li>
+        <li>The 20 miles of trails pass through some of the best shallow-water fishing areas in Texas. </li>
+        <li>Close to Corpus Christi</li>
+       
 
-        </dl>
+        <h3>Guadalupe River</h3>
+    <ul id="national-parks">
+        <li>The park has four miles of river frontage and is located in the middle of a nine-mile stretch of the Guadalupe River. </li>
+        <li> Park visitors may enjoy a variety of outdoor activities, including canoeing, fishing, swimming, tubing, picnicking, hiking and camping.</li>
+        <li>The park recently opened a 5.3-mile equestrian trail that is also open to mountain biking.</li>
+        <li> Opportunities also exist for less vigorous pursuits, such as bird-watching and nature study. </li>
+       
+
+        <h3>Enchanted Rock</h3>
+    <ul id="national-parks">
+        <li>The massive pink granite dome rising above Central Texas has drawn people for thousands of years.</li>
+        <li>You can hike, backpack, camp, rock climb, picnic, bird, study nature, geocache and stargaze.</li>
+        <li>Rock climbers must check in at park headquarters. You can pick up route maps there and read the climbing rules.</li>
+        <li>You cannot swim here or ride bikes on the trails. The Summit Trail may be closed in wet weather.</li>
+      
+
+        <h3>Big Bend</h3>
+    <ul id="national-parks">
+        <li>One of the largest, most remote, and least-visited national parks in the lower 48 United States.</li>
+        <li>Big Bend's primary attraction is its hiking and backpacking trails.</li>
+        <li>With more than 450 species of birds recorded in the park, a widely popular activity is birdwatching. Many species stop in the park during their annual migrations.</li>
+        <li>The park administers 118 miles (190 km) of the Rio Grande for recreational use. There are professional river outfitters that provide tours of the river. Use of a personal boat is permitted but a free river float permit is required. </li>
+      
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+
+
+
 
     </div>
     <!--Anchor tag that calls the id invisable-->
