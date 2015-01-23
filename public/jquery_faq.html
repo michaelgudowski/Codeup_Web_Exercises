@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>List of Parks</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        .invisable {
+            display: none;
+        }
+    </style>
+    <script src="/js/jquery.min.js"></script>
+    
+    <!--Toggle function using the class function targeting dd tags-->
+    <!-- preventDefalt prevents the anchor tag from sending to a link-->
+    <!-- all the dd tags turn off or on the invisable class-->
+    <script>
+        $('document').ready(function() {
+            $('#invisable').click(function(event) {
+                event.preventDefault();
+                $("dd").toggleClass('invisable');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="centered">
+        <h1>Parks List</h1>
+    </div>
+    <div class="">
+        <dl>
+            <dt>What government agency oversees the National Park Service?
+                </dt>
+            <dd class = "invisable">The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the Department's Assistant Secretary for Fish and Wildlife and Parks.</dd>
+            <dt>How do I obtain a park pass?
+                </dt>
+            <dd class = "invisable">Visitors can obtain park passes by visiting their nearest park site. Most sites have passes available, however it is recommended to call a park prior to your visit. Learn more about the America the Beautiful - National Parks and Federal Recreation Lands Pass.</dd>
+            <dt>What do I need to know about driving off road in national parks?    </dt>
+            <dd class = "invisable">Before you head out, check with the national parks that you intend to visit. In many national parks, off-road driving is illegal. Where off-road driving is allowed, the National Park Service regulates it.
+            </dd>
+            <dt>How many people visit the national parks?
+            </dt>
+            <dd class = "invisable">Total recreation visitors to the national parks in 2013: 273,630,895
+            </dd>
+            <dt>How do I obtain a park pass?
+                </dt>
+            <dd class = "invisable">Visitors can obtain park passes by visiting their nearest park site. Most sites have passes available, however it is recommended to call a park prior to your visit. Learn more about the America the Beautiful - National Parks and Federal Recreation Lands Pass.</dd>
+            <dt>How do I obtain a park pass?
+                </dt>
+            <dd class = "invisable">Visitors can obtain park passes by visiting their nearest park site. Most sites have passes available, however it is recommended to call a park prior to your visit. Learn more about the America the Beautiful - National Parks and Federal Recreation Lands Pass.</dd>
+            <dt>How do I make reservations for camping/lodging in national parks?
+                </dt>
+            <dd class = "invisable">Not all parks participate in this service, many campgrounds are first come, first served. For more information on specific camping and lodging services offered at the park(s) of your interest, please check their homepage by using our search feature.</dd>
+            <dt>What is the origin of the National Park Service arrowhead?
+                </dt>
+            <dd class = "invisable">The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The Sequoia tree and bison represent vegetation and wildlife, the mountains and water represent scenic and recreational values, and the arrowhead represents historical and archeological values. It was registered Feb. 9, 1965, by the U.S. Patent Office as the official emblem of the NPS. Further information on the Arrowhead, including definitions, uses, powers to revoke uses, and penalties for wrongful use can be found in Title 36 Code of Federal Regulations 11.1-4.
+                </dd>
+            <dt>What role did the National Park Service have in the Deepwater Horizon oil spill response?
+                </dt>
+            <dd class = "invisable">The National Park Service was an integral part of the national federal response to the explosion of the Deepwater Horizon drilling rig which occurred in the Gulf of Mexico on April 20, 2010.</dd>
+
+        </dl>
+
+    </div>
+    <!--Anchor tag that calls the id invisable-->
+    <a href="#" id="invisable">Click to see answers.</a>
+</body>
+</html>
