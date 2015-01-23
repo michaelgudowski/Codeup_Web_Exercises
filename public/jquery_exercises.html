@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Jquery Exercise!</title>
+</head>
+<body>
+	
+	<div>
+		<h1 class = 'h1'> To Do list</h1>
+	</div>
+
+	<p id = "paragraph">This is some text in a paragraph.</p>
+
+	<div class = "codeup">
+		<h3 id = "blue"> This text will appear black</h3>
+	</div>
+
+	<div>
+		<ul id = "list">
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ul>
+	</div>
+
+	<div class = "codeup">
+		<p> This is text in a other paragraph</p>
+	</div>
+
+	<script src="/js/jquery.min.js"></script>
+
+	<script> 
+		$('document').ready(function() {
+		$('h1').hover(
+        	function() {
+            	$(this).css('background-color', '#FF0');
+                	   },
+			function() {
+            	$(this).css('background-color', 'white');
+                	   });
+
+		$('p').dblclick(
+			function(){
+				$(this).css('font-size', "18px");
+
+					  });
+		
+		$('li').click(
+        	function() {
+            	$(this).css('background-color', 'red');
+                	   });		
+
+		});
+	
+	</script>
+</body>
+</html>
