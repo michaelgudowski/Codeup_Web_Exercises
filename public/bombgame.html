@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Disarm the BOM (Browser Object Model)</title>
+</head>
+<style type="text/css">
+    #timer {
+        font-size: 60px;
+        color: red;
+
+        position: fixed;
+        right: 10px;
+        top: 0px;
+    }
+</style>
+<body>
+    <h1>Mission Impossible!</h1>
+    <div id="timer" class="timer"></div>
+    <button id="btnDefuse">Defuse the BOM!</button>
+    <script>
+
+    // Initialize some variables.  You don't have to change these.
+    var count = 10;
+    var maxCount = 0;
+    var detonationTimer = 10; // seconds
+
+    //  TODO: Create a variable to represent your setInterval timer, 
+    // which will have a one second interval.
+    var intervalId = setInterval(function () {
+
+        if (count == maxCount) {
+            clearInterval(intervalId);
+            alert('Way to go kid. The bomb blew up!');
+        } else {
+            count--;
+            var timer = document.getElementsByTagName('id');
+            console.log(timer)
+        }
+    }, 1000);
+
+        // TODO: Decrement the timer by one each interval.
+
+        // TODO: Update the timer div with the new value
+
+        // TODO: Console log the current interval.
+
+        // TODO: Explode the BOM with an alert if the timer runs out.
+        // TODO: Clear the interval afterwards.
+
+
+
+
+    // TODO: Create a variable whose value is the btnDefuse element.
+    var btnDefuse = document.getElementById('btnDefuse');
+    // TODO: Attach an event listener to that variable, which runs when clicked.
+    btnDefuse.addEventListener('click', function () {
+    
+    var randTop = Math.floor(Math.random()*100);
+    var randLeft = Math.floor(Math.random()*(700 -1 +1)+1;
+}
+
+//setInterval(randomMargin, 1000);
+       
+        // // TODO: If the count is equal or greater than maxCount
+        // if (count >= maxCount) {
+        //     // TODO: Clear the interval.
+        //     clearInterval(intervalId);
+        //     // TODO: Alert "You are a hero! You disarmed the BOM!"
+        //     alert('You are a hero! You disarmed the BOM!');
+        // }
+
+        // // TODO: Else if the count is less than maxCount
+        // else {
+        //     // TODO: Assign the random margin top to the button
+        //     document.getElementById('btnDefuse').style.marginTop = randMarginTop;
+        //     // TODO: Assign the random margin left to the button
+        //     document.getElementById('btnDefuse').style.marginLeft = randMarginLeft;
+        //     // TODO: Increment the count by one
+        //     count++;
+        // }
+    //}
+    );
+
+    </script>
+</body>
+</html>
