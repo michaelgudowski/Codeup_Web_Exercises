@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+var movies = [
+{
+"title": "One Flew Over the Cuckoo's Nest",
+"year": 1975,
+"rating": "R",
+"length": 133,
+"metascore": 79,
+"director": "Milos Forman",
+"description": "Upon admittance to a mental institution, a brash rebel rallies the patients to take on the oppressive head nurse."
+},
+{
+"title": "Blade Runner",
+"year": 1982,
+"rating": "R",
+"length": 117,
+"metascore": 88,
+"director": "Ridley Scott",
+"description": "A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator."
+},
+{
+"title": "Amadeus.",
+"year": 1984,
+"rating": "R",
+"length": 160,
+"metascore": "93",
+"director": "Milos Forman",
+"description": "The incredible story of Wolfgang Amadeus Mozart, told by his peer and secret rival Antonio Salieri - now confined to an insane asylum."
+},
+{
+"title": "Pulp Fiction",
+"year": 1999,
+"rating": "R",
+"length": 154,
+"metascore": 94,
+"director": "Quentin Tarantino",
+"description": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+},
+{
+"title": "Taxi Driver",
+"year": 1976,
+"rating": "R",
+"length": 113,
+"metascore": 93,
+"director": "Martin Scorsese",
+"description": "A mentally unstable Vietnam war veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process."
+},
+{
+"title": "Rudy",
+"year": 1993,
+"rating": "PG",
+"length": 114,
+"metascore": "NA",
+"director": "David Anspaugh",
+"description": "Rudy has always been told that he was too small to play college football. But he is determined to overcome the odds and fulfill his dream of playing for Notre Dame."
+},
+];
+
+// Title (year) | rating
+// length: 25 | metascore
+// director
+// description
+// ===============================
+
+movies.forEach(function(element, index, array){
+console.log(element.title + "(" + element.year + ")" + " | " + element.rating);
+console.log("Lenght of film: " + element.length + " min. " + " | Metascore " + element.metascore);
+console.log(element.director);
+console.log(element.description);
+if(element.rating == 'PG') {
+	console.warn('You must be 13 or have an adult');
+}
+console.log('===============================');
+});
+
+</script>
+
+
+
+
+
+</body>
+</html>

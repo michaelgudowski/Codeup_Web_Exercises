@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script> 
+
+	var low = prompt("What number do you want you're range to start at?");
+	var high = prompt("What do you want you're range to end at?");
+
+
+	function getRandomInt(min, max) {
+    	var random = Math.floor((Math.random()*high)+1)
+	}
+
+
+	computernumber = getRandomInt(low,high)
+
+	counter = 1;
+
+	alert("You have 6 guesses");
+
+
+	userguess = prompt("Enter your guess.");
+
+
+	while (userguess != computernumber)
+	{
+		if (counter > 5){
+		
+			prompt("Sorry, you guessed too many times! Thanks for playing!");
+			prompt("The number was " + computernumber);
+		}
+
+		if (userguess > computernumber){ 
+		
+			prompt("Your number is too high.");
+			alert("You have guessed " + counter + " times.");
+			counter++;
+			userguess = prompt("Enter your guess.");
+		}
+
+		else if (userguess < computernumber){ 
+	
+			alert("Your number is too low.");
+			alert("You have guessed  " + counter + "  times.");
+			counter++;
+			userguess = prompt("Enter your guess.");
+
+		}
+		
+	}
+	if (userguess == computernumber){
+
+			alert("The number " + userguess + " is correct! Thanks for playing!");
+		}	
+
+
+	</script>
+</body>
+</html>

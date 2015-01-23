@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
+var message;
+var favorite = 'blue'; // todo, change this to your favorite color from the list
+
+if (color == 'red'){
+	message = 'red is the color of a apple.';
+}
+else if (color == 'orange'){
+	message = 'orange is the color of Nemo from Finding Nemo.';
+
+}
+else if (color == 'yellow'){
+	message = 'yellow is the color of a lemon.';
+}
+else if (color == 'green'){
+	message = 'green is the color of the Hulk.';
+}
+else if (color == 'blue'){
+	message =  'blue is the color of the sky.';
+}
+else{
+	 message = 'I do not know anything by that color.';
+}
+
+console.log (message);
+
+
+message = (color == favorite) ? "Blue is my favorite color." :  color + " is not my favorite color.";
+
+
+console.log (message);
+
+</script>
+
+</body>
+</html>
+
