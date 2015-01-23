@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+
+		 var random = Math.floor((Math.random()*50)+1);
+	
+			while (random % 2 == 0){
+				random = Math.floor((Math.random()*50)+1);
+
+			}
+
+		console.log("Random odd number to skip is: " + random);
+
+
+			for (var randomodd = 1; randomodd <= 50; randomodd +=2 ){
+				
+				if  (random == randomodd){
+
+					console.log("Yikes! Skipping number:" + random);
+
+				}
+
+				else{
+					console.log("Here is a odd number:" + randomodd);
+
+				}
+			}
+
+
+	</script>
+</body>
+</html>
