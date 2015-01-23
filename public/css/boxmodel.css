@@ -1,0 +1,97 @@
+.redbox{
+	border: 1px solid black;
+	width: 72px;
+	height: 72px;
+    padding:22;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    background-color: red;
+    color: white;
+    float: left;
+}
+.orangebox{
+	border: 1px solid black;
+	width: 72px;
+	height: 72px;
+    padding: 22px;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    background-color: orange ;
+    color: white;
+    float: left;
+}
+.yellowbox{
+	border: 1px solid black;
+	width: 72px;
+	height: 72px;
+    padding:22;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    background-color: yellow;
+    color: white;
+    float: left;
+}
+.greenbox{
+	border: 1px solid black;
+	width: 72px;
+	height: 72px;
+	padding: 22px;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    background-color: green;
+    color: white;
+    float: left;
+}
+.bluebox{
+	border: 1px solid black;
+	width: 72px;
+	height: 72px;
+	padding: 22px;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    background-color: blue;
+    color: white;
+    float: left;
+}
+.purplebox{
+	border: 1px solid black;
+	width: 72px;
+	height: 72px;
+	padding:22;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    background-color: purple;
+    color: white;
+    float: left;
+}
+
+#mainbox{
+    margin: 50px auto;
+    width: 600px;
+    height: 400px;
+}
+
+.arrow{
+    position: relative;
+    top: -100px;
+    right: -80px;
+}
+
+.ribbon{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
